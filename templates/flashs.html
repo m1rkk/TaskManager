@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<title>My flashes</title>
+<script>
+    function delete_flash(flash){
+        $(flash).parent().remove()
+    }
+</script>
+{%with messages = get_flashed_messages()%}
+    {%if messages%}
+        <ul class = flashes>
+            {%for message in messages%}
+                <li>
+                    {{message}}
+                </li>
+            {%endfor%}
+        </ul>
+    {%endif%}
+{% endwith %}
+{% block body %}{% endblock %}
