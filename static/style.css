@@ -1,15 +1,15 @@
 body{
     font-family: Arial,sans-serif;
-    background-color: #F2F2F2;
+    background-color: #FFFBE9;
     color: #030F26;
 }
 h1{
-    color: #030F26;
+    color: #000000;
 }
 
 input[type = "text"]{
- background-color: #5E9FF2;
- color: #F2F2F2;
+ background-color: #E3CAA5;
+ color: #000000;
  border: none;
  border-radius: 5px;
  padding: 10px;
@@ -17,9 +17,32 @@ input[type = "text"]{
  cursor: pointer;
  transition: background-color 1.0s ease;
 }
+input[type = "password"]{
+ background-color: #E3CAA5;
+ color: #000000;
+ border: none;
+ border-radius: 5px;
+ padding: 10px;
+ margin: 5px 0;
+ cursor: pointer;
+ transition: background-color 1.0s ease;
+}
+
 input[type = "submit"]{
-background-color: #0540F2;
- color: #F2F2F2;
+background-color: #AD8B73;
+ color: #FFFBE9;
+ border: none;
+ border-radius: 5px;
+ padding: 10px;
+ margin: 5px 0;
+ cursor: pointer;
+ transition: background-color 1.0s ease;
+
+}
+
+button[type = "submit"]{
+background-color: #AD8B73;
+ color: #FFFBE9;
  border: none;
  border-radius: 5px;
  padding: 10px;
@@ -35,7 +58,7 @@ padding:0;
 }
 
 li{
-background-color: #5E9FF2;
+background-color: #E3CAA5;
 margin-top:15px;
 margin-right: 150px;
 margin-left: 400px;
@@ -44,8 +67,8 @@ border-radius: 5px;
 }
 
 a{
-background-color: #0540F2;
-color: #F2F2F2;
+background-color: #AD8B73;
+color: #000000;
 text-decoration:none;
 position: abosolute;
 padding: 10px;
@@ -56,13 +79,16 @@ transition: background-color 1.0s ease;
 
 
 a[class="complete"]{
+background-color: #AD8B73;
 left: 135px;
 }
 
 a[class="edit"]{
+background-color: #AD8B73;
 left: 235px;
 }
 
 a[class="delete"]{
+background-color: #AD8B73;
 left: 300px;
 }
